@@ -1,0 +1,27 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("LYOFE DUPE GUI", "Sentinel")
+
+-- DUPE
+local Main = Window:NewTab("DUPE")
+local MainSection = Main:NewSection("Dupe")
+
+
+MainSection:NewToggle("Select Land", "Scan the middle of the land", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/8KdYdF85"))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/wcYUgJCw"))()
+    end
+end)
+
+MainSection:NewButton("Free Land", "Press this for free land", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/EruD6nzD"))()
+end)
+
+MainSection:NewButton("Destroy Selected Land", "Destroy the green frame", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/q4ccP1Cd"))()
+end)
+
+MainSection:NewKeybind("Toggle On/Off UI", "Choose the keybind for on/off UI", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
